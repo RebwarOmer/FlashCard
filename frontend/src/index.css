@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Set up a perspective for 3D flip */
+/* Ensure the parent element has perspective for 3D effect */
+.perspective {
+  perspective: 1000px;
+}
+
+/* Preserve the 3D transform on the child element */
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Ensure the backface of the card is hidden */
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Rotate 180 degrees for the back side */
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* Example background color */
+  /* Example text color */
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #52527a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7878a7;
+}
